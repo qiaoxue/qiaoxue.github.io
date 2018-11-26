@@ -16,14 +16,13 @@
     <splitter split-orientation="horizontal" split-proportion="0.61650795">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="717">
-                  <caret line="471" column="35" lean-forward="false" selection-start-line="471" selection-start-column="35" selection-end-line="471" selection-end-column="35" />
+                <state relative-caret-position="84">
+                  <caret line="270" column="39" lean-forward="false" selection-start-line="270" selection-start-column="39" selection-end-line="270" selection-end-column="39" />
                   <folding>
-                    <element signature="e#13375#16152#0" expanded="false" />
-                    <element signature="e#16787#18645#0" expanded="false" />
+                    <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -39,11 +38,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="resume.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="resume.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resume.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+                <state relative-caret-position="996">
+                  <caret line="87" column="3" lean-forward="false" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -93,8 +92,9 @@
       <find>right-box</find>
       <find>comment</find>
       <find>experience</find>
-      <find>ec</find>
       <find>img</find>
+      <find>url</find>
+      <find>ec</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,12 +225,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542939523489</updated>
-      <workItem from="1542939524933" duration="31045000" />
+      <workItem from="1542939524933" duration="31220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31045000" />
+    <option name="totallyTimeSpent" value="31220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1058" extended-state="6" />
@@ -336,6 +336,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resume.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="996">
+          <caret line="87" column="3" lean-forward="false" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/echarts (2).js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -346,20 +354,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="471" column="35" lean-forward="false" selection-start-line="471" selection-start-column="35" selection-end-line="471" selection-end-column="35" />
+        <state relative-caret-position="84">
+          <caret line="270" column="39" lean-forward="false" selection-start-line="270" selection-start-column="39" selection-end-line="270" selection-end-column="39" />
           <folding>
-            <element signature="e#13375#16152#0" expanded="false" />
-            <element signature="e#16787#18645#0" expanded="false" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
