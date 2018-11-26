@@ -269,7 +269,7 @@
         <div class="clearfix outer-box">
             <div class="left-box">
                 <div class="photo-box">
-                    <img src="/12.JPG" alt="">
+                    <img src="images/12.JPG" alt="">
                     <p class="left-name">乔雪</p>
                     <p class="left-job">广告/商业产品经理</p>
                     <div class="clearfix pl20">
@@ -375,8 +375,103 @@
         </div>
         <div class="bottom-bar"></div>
     </div>
-    <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
-    <script src="https://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script type="text/javascript" src="js/echarts%20(2).js"></script>
+    <script>
+
+        // 字符云
+        var myChart1 = echarts.init(document.getElementById('habit'));
+        var option1 = {
+            series: [{
+                name: 'Google Trends',
+                type: 'wordCloud',
+                size: ['80%', '80%'],
+                textRotation : [0, 45, 90, -45],
+                textPadding: 0,
+                autoSize: {
+                    enable: true,
+                    minSize: 14
+                },
+                data: [
+                    {
+                        name:"旅游",
+                        value: 300,
+                        itemStyle: {
+                            normal: {
+                                color: '#2E2E2E'
+                            }
+                        }
+                    },
+                    {
+                        name: "运动",
+                        value: 158,
+                        itemStyle: {
+                            normal: {
+                                color: '#D04040'
+                            }
+                        }
+                    },
+                    {
+                        name: "读书",
+                        value: 238,
+                        itemStyle: {
+                            normal: {
+                                color: '#D06163'
+                            }
+                        }
+                    },
+                    {
+                        name: "听音乐",
+                        value: 305,
+                        itemStyle: {
+                            normal: {
+                                color: '#D09595'
+                            }
+                        }
+                    },
+                    {
+                        name: "观看纪录片",
+                        value: 646,
+                        itemStyle: {
+                            normal: {
+                                color: '#D0664C'
+                            }
+                        }
+                    },
+                    {
+                        name: "脑洞大",
+                        value: 124,
+                        itemStyle: {
+                            normal: {
+                                color: '#D06B61'
+                            }
+                        }
+                    },
+                    {
+                        name: "高尔夫球",
+                        value: 50,
+                        itemStyle: {
+                            normal: {
+                                color: '#D07A6E'
+                            }
+                        }
+                    },
+                    {
+                        name: "网球",
+                        value: 289,
+                        itemStyle: {
+                            normal: {
+                                color: '#D07D84'
+                            }
+                        }
+                    }
+                ]
+            }]
+        };
+
+        // 为echarts对象加载数据
+        myChart1.setOption(option1)
+    </script>
+    <script src="js/echarts.min.js"></script>
     <script type="text/javascript">
         var dom = document.getElementById("skill-chart");
         var myChart = echarts.init(dom);
@@ -455,115 +550,6 @@
         if (option && typeof option === "object") {
             myChart.setOption(option, true);
         }
-
-        // 字符云
-        require.config({
-            paths: {
-                echarts: 'http://echarts.baidu.com/build/dist'
-            }
-        });
-
-        require(
-            [
-                'echarts',
-                'echarts/chart/wordCloud' // 使用柱状图就加载bar模块，按需加载
-            ],
-            function (ec) {
-                // 基于准备好的dom，初始化echarts图表
-                var myChart = ec.init(document.getElementById('habit'));
-
-                var option = {
-                    series: [{
-                        name: 'Google Trends',
-                        type: 'wordCloud',
-                        size: ['80%', '80%'],
-                        textRotation : [0, 45, 90, -45],
-                        textPadding: 0,
-                        autoSize: {
-                            enable: true,
-                            minSize: 14
-                        },
-                        data: [
-                            {
-                                name:"旅游",
-                                value: 300,
-                                itemStyle: {
-                                    normal: {
-                                        color: '#2E2E2E'
-                                    }
-                                }
-                            },
-                            {
-                                name: "运动",
-                                value: 158,
-                                itemStyle: {
-                                    normal: {
-                                        color: '#D04040'
-                                    }
-                                }
-                            },
-                            {
-                                name: "读书",
-                                value: 238,
-                                itemStyle: {
-                                    normal: {
-                                        color: '#D06163'
-                                    }
-                                }
-                            },
-                            {
-                                name: "听音乐",
-                                value: 305,
-                                itemStyle: {
-                                    normal: {
-                                        color: '#D09595'
-                                    }
-                                }
-                            },
-                            {
-                                name: "观看纪录片",
-                                value: 646,
-                                itemStyle: {
-                                    normal: {
-                                        color: '#D0664C'
-                                    }
-                                }
-                            },
-                            {
-                                name: "脑洞大",
-                                value: 124,
-                                itemStyle: {
-                                    normal: {
-                                        color: '#D06B61'
-                                    }
-                                }
-                            },
-                            {
-                                name: "高尔夫球",
-                                value: 50,
-                                itemStyle: {
-                                    normal: {
-                                        color: '#D07A6E'
-                                    }
-                                }
-                            },
-                            {
-                                name: "网球",
-                                value: 289,
-                                itemStyle: {
-                                    normal: {
-                                        color: '#D07D84'
-                                    }
-                                }
-                            }
-                        ]
-                    }]
-                };
-
-                // 为echarts对象加载数据
-                myChart.setOption(option);
-            }
-        );
     </script>
 </body>
 </html>
