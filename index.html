@@ -16,7 +16,7 @@
             background: #d7d7d7;
             width: 920px;
             margin: 0 auto;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
             /*font-family: Arial, SimSun-ExtB, '宋体';*/
             font-family: ".PingFang SC";
         }
@@ -29,7 +29,7 @@
             clear: both;
         }
         .container{
-            margin: 0 0 0 30px;
+            margin: 0 0 0 10px;
             box-shadow: 1px 1px 10px 2px rgba(0,0,0,.3);
             background: #f3f3f3;
         }
@@ -39,7 +39,7 @@
             background: #d04040;
         }
         .outer-box{
-            padding-top: 20px;
+            padding-top: 5px;
         }
         .left-box, .right-box{
             float: left;
@@ -50,6 +50,9 @@
         }
         .pt20{
             padding-top: 20px;
+        }
+        .pt10{
+            padding-top: 10px;
         }
         .left-box{
             border-right: 1px dashed #e46642;
@@ -68,13 +71,12 @@
         .left-job{
             width: 100%;
             text-align: center;
-            margin-top: 10px;
         }
         .left-line{
             width: 75%;
-            margin: 10px auto;
+            margin: 5px auto;
             height: 2px;
-            background: #2e2e2e;
+            background: rgba(0,0,0,0.15);
         }
         .photo-box img{
             display: block;
@@ -106,7 +108,7 @@
         }
         .job-contnet{
             float: left;
-            margin-top: 15px;
+            margin-top: 8px;
             margin-right: 5px;
         }
         .job-contnet i{
@@ -199,14 +201,14 @@
             font-weight: normal;
         }
         .personal-body{
-            padding: 15px 10px;
+            padding: 10px 0px 10px 32px;
         }
         .personal-body p{
             width: 50%;
             float: left;
             margin: 8px 0;
             font-size: 15px;
-            line-height: 15px;
+            line-height: 8px;
         }
         .personal-body{
             padding-bottom: 10px;
@@ -221,7 +223,7 @@
             width: 100%;
             margin: 8px 0;
             font-size: 15px;
-            line-height: 15px;
+            line-height: 8px;
         }
         .project{
             padding: 0 20px 10px;
@@ -269,7 +271,7 @@
         <div class="clearfix outer-box">
             <div class="left-box">
                 <div class="photo-box">
-                    <img src="images/12.JPG" alt="">
+                    <img src="images/12.jpg" alt="">
                     <p class="left-name">乔雪</p>
                     <p class="left-job">广告/商业产品经理</p>
                     <div class="clearfix pl20">
@@ -279,25 +281,25 @@
                     </div>
                     <p class="left-line"></p>
                 </div>
-                <div class="personal pl20 pt20">
+                <div class="personal pl20 pt10">
                     <p class="box-title"><i class="icon iconfont icon-people"></i><span>个人信息</span></p>
                     <div class="box-body personal-body clearfix">
-                        <p><span>毕业院校：</span>周口师范学院</p>
+                        <p><span>院 校：</span>周口师范学院</p>
                         <p><span>学 历：</span>本科</p>
                         <p><span>专 业：</span>计算机科学与技术</p>
                         <p><span>籍 贯：</span>内蒙古包头</p>
-                        <p><span>双学位专业：</span>国际经济与贸易</p>
+                        <div><span>双学位专业：</span>国际经济与贸易</div>
                         <div><span>求职状态：</span>在职状态，可一个月内入职</div>
                     </div>
                 </div>
-                <div class="skill pl20 pt20">
+                <div class="skill pl20 pt10">
                     <p class="box-title"><i class="icon iconfont icon-gongrenjinengshujuku"></i><span>自我评价</span></p>
                     <div id="skill-chart"></div>
                 </div>
             </div>
             <div class="right-box">
                 <div class="right-container">
-                    <div class="habit pt20">
+                    <div class="habit pt10">
                         <p class="box-title"><i class="icon iconfont icon-xin"></i><span>兴趣爱好</span></p>
                         <div id="habit"></div>
                     </div>
@@ -393,11 +395,11 @@
                 },
                 data: [
                     {
-                        name:"旅游",
-                        value: 300,
+                        name:"旅行",
+                        value: 600,
                         itemStyle: {
                             normal: {
-                                color: '#2E2E2E'
+                                color: '#D0664C'
                             }
                         }
                     },
@@ -430,10 +432,10 @@
                     },
                     {
                         name: "观看纪录片",
-                        value: 646,
+                        value: 346,
                         itemStyle: {
                             normal: {
-                                color: '#D0664C'
+                                color: '#2E2E2E'
                             }
                         }
                     },
@@ -478,7 +480,7 @@
         var app = {};
         option = null;
         var dataAxis = ['Axure', 'XMind', 'visio', 'PS', 'PRD', 'BRD', 'MRD', 'SWOT','SQL','前端','http'];
-        var data = [85, 95, 80, 50, 80, 60, 60,50,70,95,90];
+        var data = [85, 95, 60, 50, 80, 30, 30,50,40,65,30];
         var yMax = 100;
         var dataShadow = [];
 
